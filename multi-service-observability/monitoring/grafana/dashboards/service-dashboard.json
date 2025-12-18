@@ -1,0 +1,30 @@
+{
+  "id": null,
+  "title": "Microservices Observability",
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "User Service Requests",
+      "targets": [
+        {
+          "expr": "user_service_requests_total",
+          "refId": "A"
+        }
+      ],
+      "gridPos": { "x": 0, "y": 0, "w": 12, "h": 8 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Order Service Requests",
+      "targets": [
+        {
+          "expr": "order_service_requests_total",
+          "refId": "B"
+        }
+      ],
+      "gridPos": { "x": 12, "y": 0, "w": 12, "h": 8 }
+    }
+  ],
+  "schemaVersion": 36,
+  "version": 1
+}
